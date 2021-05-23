@@ -1,0 +1,86 @@
+﻿<Page x:Class="Registration.Auto"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registration"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Auto">
+
+    <Grid>
+                <Border Background="DarkRed"/>
+        <!--Лого Umbrella-->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="25"
+                    VerticalAlignment="Top">
+            <Image Source="C:\Users\Admin\Desktop\Новая папка\Registration\Registration\Images\Umbrella.png" Width="100"/>
+            <StackPanel Width="10"/>
+            <TextBlock 
+                Text="Umbrella Corporation" Width="170"
+                TextWrapping="Wrap"
+                FontSize="16" 
+                Foreground="Black"  
+                FontFamily="Eurostile Extended"/>
+        </StackPanel>
+        
+        <!--Слово Authorization-->
+        <StackPanel HorizontalAlignment="Center" 
+                    Height="240">
+            <TextBlock 
+                Text="Authorization"
+                FontSize="28"
+                Foreground="White"
+                FontFamily="Eurostile Extended"/>
+        </StackPanel>
+
+        <!--Поля Логин и Пароль-->
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <!--Поле логин-->
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="Enter login:"
+                           FontSize="14"
+                           Foreground="White"
+                           FontFamily="Eurostile Extended"
+                           Width="155"
+                           Padding="50,0,0,0"/>
+                <TextBox x:Name="TBlogin"
+                         Width="200"
+                         FontSize="14"
+                         FontFamily="Eurostile Extended"/>
+            </StackPanel>
+            <StackPanel Height="20"/>
+            
+            <!--Поле пароль-->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Enter password:"
+                           Foreground="White"
+                           FontSize="14"
+                           FontFamily="Eurostile Extended"
+                           Width="155"/>
+                <TextBox x:Name="TBpass"
+                         Width="200"
+                         FontSize="14"
+                         FontFamily="Eurostile Extended"/>
+
+            </StackPanel>
+        </StackPanel>
+        <!--Кнопка Enter-->
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="80">
+            <Button
+                Content="Enter"
+                FontSize="16"
+                Background="White"
+                Foreground="DarkRed"
+                FontFamily="Eurostile Extended"
+                Height="30"
+                Width="100"
+                Name="BTenter" Click="BTenter_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
