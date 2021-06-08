@@ -12,11 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Fonts
 
 namespace Registration.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Auth.xaml
     /// </summary>
     public partial class Auth : Page
     {
