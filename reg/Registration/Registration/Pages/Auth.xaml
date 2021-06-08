@@ -9,7 +9,6 @@
       Title="Auth">
 
     <Grid>
-        <!--Слово Authorization-->
         <StackPanel 
             Margin="0 0 0 200"
             VerticalAlignment="Center"
